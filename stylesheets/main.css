@@ -1,15 +1,15 @@
 
 html,body{
   height: 100%;
-}
-html{
   scroll-behavior: smooth;
 }
+
 #navbarSupportedContent .nav-link{
   color: white;
 }
 #navbarSupportedContent .nav-link:hover{
   color:#00B0DC;
+  transition: 400ms ease-in-out;
 }
 
 .navbar .navbar-brand{
@@ -32,10 +32,7 @@ html{
 .navbar .navbar-brand.scrolled{
   color: #000;
 }
-/* #navbarSupportedContent .nav-link.scrolled{
-  color: #000;
-  transition: color 300ms;
-} */
+
 img {
   max-width: 100%;
   height: auto;
@@ -174,7 +171,7 @@ img {
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
   width: 100%;
   background-color: #7dcce0;
 }
@@ -286,7 +283,7 @@ h2 {
 }
 #contact {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: #111;
   overflow: hidden;
   padding-bottom: 200px;
@@ -385,7 +382,7 @@ h2 {
   color: #bbb;
 }
 .para-color{
-  color: blue;
+  color: #00B0DC;
 }
 
 .place {
@@ -486,9 +483,6 @@ h2 {
 
 /* Begin Media Queries*/
 @media screen and (max-width: 760px) {
-    #contact {
-        height: 1000px;
-    }
   .section-header {
     font-size: 65px;
   }
@@ -513,9 +507,6 @@ h2 {
 }
 
 @media screen and (max-width: 569px) {
-  #contact {
-    height: 1200px;
-    }
   .section-header{
     font-size: 50px;
   }
@@ -549,7 +540,6 @@ h2 {
     height: 55px;
     line-height: 55px;
   }
-  
 }
 
 @media screen and (max-width: 410px) {
